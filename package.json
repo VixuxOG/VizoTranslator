@@ -1,0 +1,25 @@
+{
+  "name": "vizotranslator",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "vizolabs-api",
+    "vizolabs-web",
+    "vizolabs-sdk/javascript"
+  ],
+  "scripts": {
+    "dev": "npm run dev:api & npm run dev:web",
+    "dev:api": "cd vizolabs-api && npm run dev",
+    "dev:web": "cd vizolabs-web && npm run dev",
+    "build": "npm run build:api && npm run build:web",
+    "build:api": "cd vizolabs-api && npm run build",
+    "build:web": "cd vizolabs-web && npm run build",
+    "test": "npm run test:api && npm run test:web",
+    "lint": "npm run lint:api && npm run lint:web",
+    "db:migrate": "cd supabase && npm run migrate",
+    "db:seed": "cd supabase && npm run seed"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

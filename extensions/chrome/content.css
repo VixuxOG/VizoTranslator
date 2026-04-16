@@ -1,0 +1,62 @@
+.vizo-translate-popup {
+  position: absolute;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  width: 320px;
+  z-index: 999999;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.vizo-translate-popup.dark {
+  background: #1f2937;
+  color: white;
+}
+
+.vizo-translate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.vizo-translate-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0ea5e9;
+}
+
+.vizo-translate-close {
+  cursor: pointer;
+  color: #9ca3af;
+  font-size: 18px;
+}
+
+.vizo-translate-close:hover {
+  color: #6b7280;
+}
+
+.vizo-original-text {
+  background: #f3f4f6;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 12px;
+  max-height: 80px;
+  overflow: auto;
+}
+
+.vizo-translated-text {
+  background: #e0f2fe;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  min-height: 40px;
+}
+
+.vizo-loading {
+  text-align: center;
+  padding: 20px;
+  color: #9ca3af;
+}
